@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* HEADER */
+header {
+    background: #fff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f15b22;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.buttons a {
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.login-btn {
+    color: #333;
+    border: 2px solid #f15b22;
+}
+
+.signup-btn {
+    background-color: #f15b22;
+    color: #fff;
+    border: none;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 50px;
+    background-color: #fff;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.hero h1 span {
+    color: #f15b22;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cta {
+    padding: 15px 30px;
+    background-color: #f15b22;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero-image {
+    max-width: 40%;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+/* FEATURES SECTION */
+.features {
+    text-align: center;
+    padding: 50px;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* BLOG SECTION */
+.blog {
+    background-color: #fff;
+    padding: 50px;
+}
+
+.blog h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.blog-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.blog-item {
+    max-width: 300px;
+    text-align: center;
+}
+
+.blog-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.blog-item h4 {
+    margin: 20px 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+.feature-item i {
+    color: #f15b22;
+    margin-bottom: 20px;
+}
+/* DEALS & DISCOUNTS STYLES */
+.deals {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.deals h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.deals span {
+    color: #f15b22;
+}
+
+.deals p {
+    margin-bottom: 40px;
+}
+
+.deals-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.deal-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 200px;
+}
+
+.deal-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.deal-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.deal-item p {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.price-info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.new-price {
+    color: #f15b22;
+    font-weight: bold;
+}
+
+.book-now {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: #f15b22;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* VACATION PLAN STYLES */
+.vacation-plan {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.vacation-plan h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.vacation-plan span {
+    color: #f15b22;
+}
+
+.vacation-plan p {
+    margin-bottom: 40px;
+}
+
+.vacation-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.vacation-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 200px;
+}
+
+.vacation-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.vacation-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.vacation-item p {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+
+/* FOOTER */
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; 
+    gap: 50px;
+    margin-bottom: 30px;
+    flex-wrap: wrap; 
+}
+
+.footer-section {
+    max-width: 200px;
+    text-align: left;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #f15b22;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #f15b22;
+}
+
+/* Social Icons */
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f15b22;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
