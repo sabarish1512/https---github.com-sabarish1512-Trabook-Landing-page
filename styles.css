@@ -6,14 +6,15 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    font-family: 'Volkhov', serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #FEFCFB;
 }
 
 /* HEADER */
 header {
-    background: #fff;
+    background: #FEFCFB;
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
@@ -24,7 +25,7 @@ header {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #f15b22;
+    color: #222;
 }
 
 nav ul {
@@ -43,27 +44,27 @@ nav ul li a {
     text-decoration: none;
     margin-left: 20px;
     padding: 10px 20px;
-    border-radius: 25px;
+    border-radius: 5px;
     font-weight: 500;
 }
 
 .login-btn {
-    color: #333;
-    border: 2px solid #f15b22;
+    color: #FA7436;
+    border: none;
 }
 
 .signup-btn {
-    background-color: #f15b22;
-    color: #fff;
+    background-color: #FA7436;
+    color: #FEFCFB;
     border: none;
 }
 
 /* HERO SECTION */
 .hero {
     display: flex;
-    justify-content: space-between;
-    padding: 100px 50px;
-    background-color: #fff;
+    justify-content: space-around;
+    padding: 100px 50px 0px;
+    background-color: #FEFCFB;
 }
 
 .hero-text {
@@ -76,24 +77,28 @@ nav ul li a {
 }
 
 .hero h1 span {
-    color: #f15b22;
+    color: #FA7436;
 }
 
 .hero p {
+    color: #666;
     font-size: 1.2rem;
     margin: 20px 0;
 }
 
 .cta {
     padding: 15px 30px;
-    background-color: #f15b22;
-    color: #fff;
-    border-radius: 25px;
+    background-color: #FEFCFB;
+    color: #FA7436;
+    border: 1px solid #FA7436;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: 500;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .hero-image {
+    background-color: #FEFCFB;
     max-width: 40%;
 }
 
@@ -101,15 +106,81 @@ nav ul li a {
     max-width: 100%;
 }
 
+
+/* EXPLORE SECTION */
+.explore {
+    background-color: #FEFCFB;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.explore-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns items to the top to fit the labels */
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px; 
+    width: 80%; 
+    gap: 20px; /* Adjusts the gap between options */
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+}
+
+.option label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Adds space between the label and the select box */
+    color: #333;
+}
+
+.option select {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 180px;
+}
+
+.explore-now-btn {
+    background-color: #FA7436;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.explore-now-btn:hover {
+    background-color: #e64a19;
+}
+
 /* FEATURES SECTION */
 .features {
-    text-align: center;
+    background-color: #F7F8FC;
+    text-align:center;
     padding: 50px;
 }
 
 .features h2 {
     font-size: 2.5rem;
     color: #333;
+}
+.features h2 span {
+    color: #FA7436;
 }
 
 .features-grid {
@@ -121,6 +192,7 @@ nav ul li a {
 
 .feature-item {
     background: #fff;
+    text-align: start;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -128,12 +200,280 @@ nav ul li a {
 }
 
 .feature-item h3 {
+    font-family: 'Poppins','san-serif';
+    font-weight: 500;
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
+.feature-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* DEALS & DISCOUNTS STYLES */
+.deals-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.deals-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.deals-section h1 span {
+    color: #FA7436;
+}
+
+.deals-section p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.cards-container {
+    font-family: 'Poppins','sans-serif';
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+}
+
+.card-info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-left {
+    font-family: 'Poppins','sans-serif';
+    text-align: left;
+    padding-top: 10px;
+}
+
+.info-left h3 {
+    font-size: 1.5rem;
+    font-weight: 450;
+    margin-bottom: 5px;
+}
+
+.info-left p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+.info-right {
+    text-align: right;
+}
+
+.rating {
+    color: #FA7436;
+    font-size: 0.9rem;
+}
+
+.price {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.price del {
+    color: #999;
+    margin-right: 5px;
+}
+
+.price span {
+    color: #FA7436;
+    font-weight: bold;
+}
+button {
+    background-color: #FA7436;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.card {
+    position: relative;
+}
+
+.card:nth-child(2) button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FA7436;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.card:nth-child(2) button:hover {
+    background-color: #FA7436;
+}
+
+button:hover {
+    background-color: #FA7436;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+/* VACATION PLAN STYLES */
+.highlight {
+    color: #f15b22;
+}
+
+.description {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #777;
+}
+
+.vacation-plan {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+.vacation-plan h1 {
+    font-family: 'Volkhov',sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.cards-container{
+    padding-top: 30px;
+}
+.info-left i {
+    color: #FA7436;
+    margin-right: 2px;
+}
+
+/* Testimonial section */
+
+.testimonial-section {
+    background-color: #f0f2f5;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-left, .testimonial-right {
+    flex: 1;
+    padding: 20px;
+}
+.testimonial-header {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.testimonial-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+.testimonial-header h2 span {
+    color: #f97316;
+}
+.testimonial-header p {
+    font-size: 16px;
+    color: #666;
+}
+.testimonial-navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.testimonial-navigation button {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.testimonial-navigation button:hover {
+    background-color: #f97316;
+    color: #fff;
+    border-color: #f97316;
+}
+.testimonial-navigation button i {
+    font-size: 16px;
+}
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    text-align: left;
+    position: relative;
+    margin-bottom: 20px;
+}
+.testimonial-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+ position: absolute;
+    top: -25px;
+    left: 20px;
+    border: 3px solid #fff;
+}
+.testimonial-card p {
+    font-size: 16px;
+    color: #333;
+    margin: 20px 0;
+}
+.testimonial-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+.testimonial-card span {
+    font-size: 14px;
+    color: #666;
+}
+
 
 /* BLOG SECTION */
 .blog {
+    font-family: 'Poppins','sans-serif';
     background-color: #fff;
     padding: 50px;
 }
@@ -143,17 +483,20 @@ nav ul li a {
     font-size: 2.5rem;
     color: #333;
 }
+.blog span {
+    color: #FA7436;
+}
 
 .blog-grid {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 0px;
     margin-top: 30px;
 }
 
 .blog-item {
     max-width: 300px;
-    text-align: center;
+    text-align: start;
 }
 
 .blog-item img {
@@ -167,143 +510,124 @@ nav ul li a {
     color: #333;
 }
 .feature-item i {
-    color: #f15b22;
+    color: #FA7436;
     margin-bottom: 20px;
 }
-/* DEALS & DISCOUNTS STYLES */
-.deals {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-}
 
-.deals h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.deals span {
-    color: #f15b22;
-}
-
-.deals p {
-    margin-bottom: 40px;
-}
-
-.deals-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.deal-item {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 200px;
-}
-
-.deal-item img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.deal-item h3 {
-    font-size: 1.2rem;
-    margin: 10px 0 5px;
-}
-
-.deal-item p {
-    font-size: 0.9rem;
-    color: #888;
-    margin-bottom: 10px;
-}
-
-.price-info {
+.slider{
     display: flex;
     justify-content: center;
-    gap: 10px;
+}
+
+
+/* Subscribe Section */
+.subscribe-section {
+    background-color: #FA7436; 
+    padding: 40px 20px; 
+    display: flex;
+    justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    width: 80%; 
+    max-width: 1000px;
+    margin: 0 auto; 
+    box-sizing: border-box;
+    position: relative;
 }
 
-.old-price {
-    text-decoration: line-through;
-    color: #888;
-}
-
-.new-price {
-    color: #f15b22;
-    font-weight: bold;
-}
-
-.book-now {
-    display: inline-block;
-    padding: 5px 10px;
-    margin-top: 10px;
-    background-color: #f15b22;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-/* VACATION PLAN STYLES */
-.vacation-plan {
+.subscribe-container {
     text-align: center;
-    padding: 50px 20px;
+    width: 100%; 
+    margin: 10px 20px 30px 20px; 
 }
 
-.vacation-plan h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+.subscribe-container h2 {
+    font-size: 2.5rem; 
+    font-weight: 600;
+    color: #fff; 
+    margin-bottom: 25px; 
+    line-height: 1.2;
 }
 
-.vacation-plan span {
-    color: #f15b22;
-}
-
-.vacation-plan p {
-    margin-bottom: 40px;
-}
-
-.vacation-grid {
+.subscribe-box {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; 
+    border-radius: 5px; 
+    padding: 5px;
+    max-width: 600px; 
+    margin: 0 auto; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
 }
 
-.vacation-item {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 200px;
+.email-input {
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 5px; 
+    outline: none;
+    flex-grow: 1; 
+    border: none; 
 }
 
-.vacation-item img {
-    width: 100%;
-    border-radius: 10px;
+.subscribe-btn {
+    background-color: #FA7436; 
+    color: #fff;
+    padding: 15px 30px ;
+    margin-bottom: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
 }
 
-.vacation-item h3 {
-    font-size: 1.2rem;
-    margin: 10px 0 5px;
+.subscribe-btn:hover {
+    background-color: #e8682f; 
 }
 
-.vacation-item p {
-    font-size: 0.9rem;
-    color: #888;
-    margin-bottom: 10px;
+/* Palm Trees and Circle Decorations */
+.subscribe-section::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 400px;
+    height: 180px;
+    background: url('Element.png') no-repeat;
+    background-size: contain;
 }
 
+.subscribe-section::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    background: url('./images/Element-tree.png') no-repeat;
+    background-size: contain;
+}
 
-/* FOOTER */
+/* Additional Styling for Circle Element */
+.subscribe-section .circle-decoration {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    background: url('Element.png') no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+}
+
 /* FOOTER */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #F7F8FC;
+    color: #666;
     padding: 40px 0;
     text-align: center;
 }
@@ -324,9 +648,13 @@ footer {
 .footer-section h4 {
     margin-bottom: 10px;
     font-size: 1.2rem;
-    color: #f15b22;
+    color: #040404;
 }
-
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #040404;
+}
 .footer-section ul {
     list-style: none;
     padding: 0;
@@ -338,13 +666,13 @@ footer {
 
 .footer-section ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #666;
     font-size: 0.9rem;
     transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-    color: #f15b22;
+    color: #FA7436;
 }
 
 /* Social Icons */
@@ -354,17 +682,22 @@ footer {
 
 .social-icons a {
     margin: 0 10px;
-    color: #fff;
+    color: #666;
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #f15b22;
+    color: #FA7436;
 }
 
 footer p {
     margin-top: 20px;
     font-size: 0.9rem;
 }
-
+.copyrights{
+    margin-left: 35px;
+    margin-right: 35px;
+    display: flex;
+    justify-content:space-between;
+}
